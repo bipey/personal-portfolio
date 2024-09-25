@@ -1,120 +1,151 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #1e1e2f;
-    color: #e8e8e8;
-    line-height: 1.6;
-  }
-  
-  header {
-    background-color: #008080;
-    padding: 30px;
-    text-align: center;
-  }
-  
-  .profile-img {
-    width: 150px;
-    border-radius: 50%;
-    border: 3px solid #f0f0f0;
-  }
-  
-  h1, h2 {
-    color: #ff9800;
-  }
-  
-  .container {
-    width: 85%;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  section {
-    margin: 50px 0;
-  }
-  
-  #about p {
-    font-size: 1.2rem;
-    margin-top: 15px;
-  }
-  
-  #skills ul {
-    list-style-type: none;
-  }
-  
-  #skills ul li {
-    background-color: #008080;
-    color: #f0f0f0;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-  }
-  
-  /* Project Cards */
-  .card {
-    background-color: #282c34;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card h3 {
-    color: #ff9800;
-  }
-  
-  .card p {
-    margin: 10px 0 20px;
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #008080;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .btn:hover {
-    background-color: #ff9800;
-    color: #fff;
-  }
-  
-  a {
-    color: #ff9800;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #ffffff;
-  }
-  
-  footer {
-    background-color: #008080;
-    color: #f0f0f0;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-  }
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #008080;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .btn:hover {
-    background-color: #ff9800;
-    color: #fff;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e2f;
+  color: #e8e8e8;
+  line-height: 1.6;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space out header content and nav */
+  padding: 20px 0;
+  background-color: #008080; /* Background color for header */
+}
+
+.header-content {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Make it take the full width */
+}
+
+.profile-img {
+  width: 180px;
+  height: 130px; /* Profile image size */
+  border-radius: 20%; /* Make it round */
+  border: 3px solid #f0f0f0; /* Border around the image */
+  margin-right: 15px; /* Space between image and text */
+}
+
+.header-text {
+  flex: 1; /* Allow text to grow */
+}
+
+h1, h2 {
+  color: #ff9800; /* Color for headings */
+}
+
+/* Navigation Bar */
+nav {
+  margin-left: auto; /* Push the nav to the right */
+}
+
+.nav-links {
+  list-style-type: none; /* Remove bullet points */
+  display: flex; /* Use flexbox for horizontal layout */
+}
+
+.nav-links li {
+  margin: 0 15px; /* Space between the nav items */
+}
+
+.nav-links a {
+  color: #f0f0f0; /* Text color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make text bold */
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.nav-links a:hover {
+  color: #ff9800; /* Change color on hover */
+}
+
+/* Main Container */
+.container {
+  width: 85%; /* Main content width */
+  margin: 0 auto; /* Center align */
+  padding: 20px; /* Padding inside container */
+}
+
+/* Section Styling */
+section {
+  margin: 50px 0; /* Space between sections */
+}
+
+#about p {
+  font-size: 1.2rem; /* Font size for about section */
+  margin-top: 15px; /* Space above paragraph */
+}
+
+/* Skills Section */
+#skills ul {
+  list-style-type: none; /* Remove bullet points */
+}
+
+#skills ul li {
+  background-color: #008080; /* Background color for skills */
+  color: #f0f0f0; /* Text color for skills */
+  padding: 10px; /* Padding inside skill items */
+  margin: 10px 0; /* Space between skill items */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Project Cards */
+.card {
+  background-color: #282c34; /* Card background color */
+  padding: 20px; /* Padding inside card */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 20px; /* Space below card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.card h3 {
+  color: #ff9800; /* Heading color inside card */
+}
+
+.card p {
+  margin: 10px 0 20px; /* Margin for paragraph inside card */
+}
+
+/* Button Styling */
+.btn {
+  display: inline-block; /* Inline block for button */
+  padding: 10px 20px; /* Button padding */
+  background-color: #008080; /* Button background color */
+  color: #fff; /* Button text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.btn:hover {
+  background-color: #ff9800; /* Change background color on hover */
+  color: #fff; /* Ensure text color remains white */
+}
+
+/* Link Styling */
+a {
+  color: #ff9800; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  color: #ffffff; /* Change link color on hover */
+}
+
+/* Footer Section */
+footer {
+  background-color: #008080; /* Footer background color */
+  color: #f0f0f0; /* Footer text color */
+  text-align: center; /* Center align text */
+  padding: 15px; /* Padding inside footer */
+  margin-top: 40px; /* Space above footer */
+}
